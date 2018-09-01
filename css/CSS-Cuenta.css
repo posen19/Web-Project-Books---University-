@@ -1,0 +1,603 @@
+@charset "utf-8";
+@font-face {
+
+font-family: "Oxygen";
+
+src: url(Fuente/Oxygen.ttf) format("opentype") ;
+
+}
+/* CSS Document */
+#localStorageInside{
+	width:100%;
+	float:left;
+	border-top:1px solid #fff;
+	background-color:#d8d8d8;
+	margin-top:5px;
+}
+
+.lsind{
+	float:left;
+	width:33.3%;
+	font-size:70%;
+}
+body{
+	font-family:"Oxygen", Arial, sans-serif;
+	font-size:2rem;
+	background-color:#f2f2f2;
+	margin:0px;
+	color:#1C140D;
+}
+a:link{
+	text-decoration: none;
+}
+a{
+	color:#1C140D;
+}
+/* -------------------------------------Estilo de la cabecera--------------------------------- */
+#loginGoogle{
+	font-size:1rem;
+}
+#Cabecera{
+	border-bottom:1.5px solid #d7d7d7;
+	background-color:#fff;
+	overflow: hidden;
+	text-align: center;
+}
+
+#logo{
+	margin-left:8%;
+}
+#logo img{
+	float:left;
+	height: 2.4em;
+}
+#logo a span{
+	font-size: 160%;
+	float:left;
+	padding-top:3px;
+	font-weight: bold;
+}
+
+#Inici,#Biblio,#Cuenta{
+	display:inline-table;
+	margin:0px;
+	padding:0px;
+	font-size:120%;
+	overflow: hidden;
+	font-weight: bold;
+	color:#1C140D;
+	margin-top:8px;
+}
+#Biblio{
+	padding-left:47px;
+}
+#Inici a,#Biblio a{
+	float:inherit;
+}
+#Cuenta a{
+	float:inherit;
+}
+#Cuenta .aba,#Inici .aba,#Biblio .aba{
+	background-color:#34A143;
+	margin-top:0em;
+	color:#fff;
+	width: 100%;
+	height: 0.2em;
+}
+
+#Biblio{
+	border-left: 0.15em solid #d7d7d7;
+}
+
+#Cuenta{
+	margin-right:10%;
+	margin-lefT:0px;
+	border:none;
+	padding-left:0px;
+	float:right;
+}
+
+#Inici{
+	margin-left:-52px;
+	margin-right:40px;
+}
+
+#Cuenta .aba{
+	margin-top:-60px;
+	padding-top:0.4em;
+	padding-bottom: 0.01em;
+	height: 50px;
+}
+#Cuenta span{
+	opacity:0.0;
+}
+
+#Biblio span:hover,#Inici span:hover{
+	background-color:#34A143;
+	color:#fff;
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
+	transition: background-color 0.4s;
+}
+
+/* ----------------------------fin Estilo de la cabecera------------------------ */
+
+
+#CuerpoPrincipal{
+	overflow: hidden;
+	margin-left:8%;
+	margin-right:8%;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	padding: 0.5em;
+	background-color:#F8F8F8;
+	border: 1.5px solid #d7d7d7;
+}
+
+.contenidoSección{
+	overflow:hidden;
+	background-color:#fcfcfc;
+	margin-left: 3px;
+	margin-right: 3px;
+	border: 1.5px solid #d7d7d7;
+	border-radius: 20px 20px 20px 20px;
+	padding: 20px;
+}
+
+#Registro{
+	border-right: 2px solid #d7d7d7;
+	float:left;
+	overflow: hidden;
+	width:49.8925%;
+	display:table;
+}
+
+#Login{
+	float:right;
+	overflow: hidden;
+	width:49%;
+}
+
+.a{
+	width:8.4em;
+	margin-left:auto;
+	margin-right: auto;
+	overflow: hidden;
+	text-align: center;
+}
+
+.campo{
+	text-align: center;
+	overflow: hidden;
+	margin:auto;
+	margin-top: 20px;
+	padding-right:5px;
+}
+
+.campo label{
+	margin:0px;
+	padding:0px;
+	font-size: 75%;
+	font-weight: bold;
+}
+
+.warning{
+	position:absolute;
+	font-size: 40%;
+	color:#34a143;
+	border: 1px solid #d7d7d7;
+	padding: 10px;
+	width: 7%;
+	margin-top: -35px;
+	text-align: left;
+	margin-left: 270px;
+	display:none;
+}
+
+#espect{
+	margin-top:-170px;
+}
+.warning p{
+	padding:0px;
+	margin:0px;
+}
+
+.campo input{
+	padding-top:0.32em;
+	padding-bottom:0.32em;
+	margin:2px;
+	margin-bottom:4px;
+	width:85%;
+	text-align: center;
+	font-size: 1rem;
+	font-weight: 500;
+}
+.triangulo {
+    width: 0; 
+    height: 0; 
+    border-right: 10px solid #d7d7d7;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+	position:absolute;
+	margin-top:-6px;
+	margin-left:-20px;
+}
+
+#espectacle{
+	padding-top:0.32em;
+	padding-bottom:0.32em;
+	margin:2px;
+	width:85%;
+	font-size:1rem;
+	resize: none;
+	margin-bottom:4px;
+	margin-top:15px;
+	font-weight: 500;
+}
+
+#espectacle:focus{
+	box-shadow: 0 0 5px 1px #34a143 ;
+	border:1px #ffffff;
+}
+
+#clearbutton{
+	padding-left:15px;
+	background-color:#BD707B;
+}
+
+.boton{
+	background-color:#34a143;
+	width:45%;
+	border:0px;
+	color:#fff;
+	font-size: 70%;
+	font-weight: bold;
+	padding:12px;
+	padding-left:2px;
+	margin-top:30px;
+}
+
+.boton2{
+	background-color:#34a143;
+	border:0px;
+	color:#fff;
+	font-size: 70%;
+	font-weight: bold;
+	padding:12px;
+	margin-top:30px;
+}
+
+.boton:active{
+	background-color:#fff;
+	color:#34a143;
+	border:0px;
+	text-decoration:none;
+}
+
+.boton2:active{
+	background-color:#fff;
+	color:#34a143;
+	border:0px;
+	text-decoration:none;
+}
+
+#registroboton{
+	background-color:#70BD7B;
+	color:fff;
+}
+#registroboton:active{
+	background-color:#ffffff;
+	color:#34a143;
+}
+
+.seleccion{
+	float:left;
+	width:15%;
+	font-size: 10px;
+	margin-top:6px;
+	margin-left:15%;
+}
+.seleccion div{
+	margin-bottom:7px;
+}
+
+.seleccion div:last-child{
+	margin-bottom:0px;
+}
+
+.seltext{
+	float:left;
+	margin-top:-1px;
+	width:70%;
+	font-size: 20px;
+	text-align: left;
+}
+
+#sup{
+	padding-top: 10px;
+}
+/*-------------------------------------*/
+
+footer{
+	background-color:#a8a8a8;
+	color:#34A143;
+	overflow: hidden;
+	display:table;
+	width: 100%;
+	font-size:90%;
+	border-top: 1.5px solid #d7d7d7;
+}
+
+footer img{
+	height:70px;
+}
+
+footer img:nth-last-child(3), footer img:nth-last-child(2){
+	float:right;
+	margin-left:3%;
+}
+
+footer img:nth-last-child(3){
+	margin-right:8%;
+}
+
+#fb{
+	height: 65px;
+	padding-top:2px;
+}
+
+.follow{
+	font-weight: bold;
+	margin-top:15px;
+	display:table-cell;
+	vertical-align: middle;
+	float:right;
+}
+
+footer img:first-child{
+	float:left;
+	margin-left:8%;
+}
+
+.der{
+	font-weight: bold;
+	margin-top:15px;
+	display:table-cell;
+	vertical-align: middle;
+	float:left;
+	margin-left:3%;
+}
+
+.ui-datepicker {
+	width: 10em;
+}
+.ui-datepicker .ui-datepicker-title select {
+	font-size: 0.7em;
+}
+.ui-datepicker table {
+	font-size: .7em;
+}
+
+#login{
+	overflow:hidden;
+	margin-top:5px;
+	z-index:1;
+}
+
+#imgLogin{
+	height:50px;
+	width:40px;
+	border-radius:25px 25px 25px 25px;
+	border: 1.5px solid #34a143;
+	float:left;
+}
+
+
+#nombreLoginp{
+	float:left;
+	display: table;
+	height:50px;
+}
+
+#nombreLogin{
+	display: table-cell;
+	vertical-align: middle;
+	color:#34a143;
+	font-size:50%;
+
+}
+
+#imgLogin img{
+	height:100%;
+	width:100%;
+
+	border-radius:25px 25px 25px 25px;
+}
+
+#login ul{
+	display:none;
+}
+
+#login:focus ul, #login:active ul {
+	display: block;
+	position: absolute;
+	width: 816px;
+	border:	solid 1px #34a143;
+	border-top: none;
+	background-color: #fff;
+}
+
+.dropdownGoogle{
+	position:relative;
+	display:inline-block;
+	cursor:pointer;
+}
+
+.dropdown-contentGoogle{
+	top:65px;
+	display:none;
+	position:fixed;
+	background-color: #ffffff;
+	min-width:160px;
+	border:1.5px solid #d7d7d7;
+	border-top: 0px;
+	z-index:0;
+	padding:0px;
+	text-align:left;
+	font-size:1rem;
+}
+
+.dropdown-contentGoogle a {
+	color:#34a143;
+    padding: 12px 16px;
+	padding-top:5px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-contentGoogle a:hover {
+	background-color: #fafafa;
+}
+
+.dropdownGoogle:hover .dropdown-contentGoogle {
+    display: block;
+}
+
+.g-signin2{
+	margin:5px;
+	margin-left:26%;
+	padding:0px;
+}
+
+#aa{
+	display:none;
+}
+
+.datosperfil{
+	margin-left:20px;
+	margin-right:20px;
+	padding-bottom:10px;
+	overflow: hidden;
+}
+
+.campo2{
+	margin-left:30px;
+	float:left;
+	overflow:hidden;
+	width:30%;
+	margin-top:20px;
+}
+
+.datosperfil div label{
+	color:#1C140D;
+	font-size:20px;
+	float:left;
+}
+
+.datosperfil div input{
+	float:right;
+}
+
+#imagenperfil{
+	float:left;
+	width:20%;
+}
+
+#imagenperfil img{
+	width:100%;
+	height:100%;
+}
+
+#imagenperfil form{
+	float:left;
+}
+
+#actualizar{
+	margin-left:10%;
+	margin-right:auto;
+}
+
+#admin{
+	display:none;
+	width:10%;
+	float:right;
+	text-align:center;
+}
+
+#librosVotados{
+	margin-left:20px;
+	margin-right:20px;
+	padding-bottom:10px;
+	overflow: hidden;
+}
+
+#titit{
+	color:#34a143;
+	font-size:2rem;
+	border-bottom:2px solid #34a143;
+}
+
+#libros{
+	overflow:hidden;
+}
+
+.novedadescont{
+	float:left;
+	overflow: hidden;
+	width: 20%;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.novedadescont img{
+	float:left;
+	height: 7em;
+	width: 5em;
+}
+
+.novedadescont h1{
+	text-align: center;
+	color:#34A143;
+	margin-top:0px;
+	display:table-cell;
+	vertical-align: middle;
+}
+.titlibro{
+	font-size:1rem;
+}
+
+.novedadescont div div{
+	display:table;
+	float:left;
+	height: 2em;
+	border:1.5px solid #d7d7d7;
+	width:4.95em;
+	border-top:0px;
+	background-color:#ffffff;
+}
+
+.novedadescont div{
+	display:inline-table;
+	width: 5em;
+}
+
+#botones{
+	text-align:center;
+}
+
+table{
+	width:100%;
+	text-align:center;
+}
+
+td{
+	border:1px solid #34a143;
+}
+
+.del, .adm{
+	background-color:#ffffff;
+	border:1.5px solid #34a143;
+	padding:4px;
+	width:100px;
+	font-size:1.2rem;
+}

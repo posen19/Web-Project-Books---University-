@@ -1,0 +1,5 @@
+{"libros":[
+	{"titulo":"El pozo de la ascensión","autor":"Brandon Sanderson","descripcion":"Texto diferente al otro, este es json","img":"Img/PortadaElPozoDeLaAscensión.jpg"},
+	{"titulo":"El temor de un hombre sabio","autor":"Patrick Rothfuss","descripcion":"Secuela de El Nombre Del Viento","img":"Img/PortadaElTemorDeUnHombreSabio.jpg"},
+	{"titulo":"¡guardias! ¡guardias!","autor":"Terry Patcher","descripcion":"Aventura de la guardia de la noche, la guardia con peor reputación que tendra que salvar la ciudad.","img":"Img/PortadaGuardiasGuardias.jpg"}
+]}

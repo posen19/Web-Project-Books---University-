@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta name="google-signin-client_id" content="121742736890-j9cr2r7ov2slm7rqq6pnj24b05phk8c4.apps.googleusercontent.com">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="js/storage.js" type="text/javascript"></script>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<script src="GoogleLogin.js"></script>
+<script src="controllerlibro.js" type="text/javascript"></script>
+<meta charset="utf-8">
+<link href="css/CSS-Libro.css" rel="stylesheet" type="text/css">
+<title>CuántoLeo</title>
+</head>
+
+<body>
+	<header id="Cabecera">
+		<div id="logo">
+			<a href="index.html"><img src="Img/logo.png" alt="Logo de la página"/><span>CuántoLeo</span></a>
+		</div>
+		<div id="Inici">
+			<a href="index.html"><span>INICIO</span>
+			<div class="aba">INICIO</div></a>
+		</div>
+		
+		<div id="Biblio">
+			<a href="Biblioteca.html"><span>BIBLIOTECA</span>
+			<div class="aba">BIBLIOTECA</div></a>
+		</div>
+		<div id="Cuenta">
+			<a href="Cuenta.html"><span>CUENTA</span>
+				<div class="aba">CUENTA</div></a>
+		</div>
+	</header>
+	
+	<div id="CuerpoPrincipal">
+		<div id="PresentaciónLibro">
+			<img src="Img/PortadaElNombreDelViento.jpg" alt="Portada del Libro"/>
+			<h1>EL NOMBRE DEL VIENTO</h1>
+			<a href="Autor-PatrickRothfuss.html"><h2>Patrick Rothfuss</h2></a>
+			<p>Puntuación media: <span id="puntu-media">10</span></p>	
+			<h3>En una posada en tierra de nadie, un hombre se dispone a relatar, por primera vez, la auténtica historia de su vida. Una historia que únicamente él conoce y que ha quedado diluida tras los rumores, las conjeturas y los cuentos de taberna que le han convertido en un personaje legendario a quien todos daban ya por muerto: Kvothe# músico, mendigo, ladrón, estudiante, mago, héroe y asesino. Ahora va a revelar la verdad sobre sí mismo. Y para ello debe empezar por el principio: su infancia en una troupe de artistas itinerantes, los años malviviendo como un ladronzuelo en las calles de una gran ciudad y su llegada a una universidad donde esperaba encontrar todas las respuestas que había estado buscando. «Viajé, amé, perdí, confié y me traicionaron.» «He robado princesas a reyes agónicos. Incendié la ciudad de Trebon. He pasado la noche con Felurian y he despertado vivo y cuerdo. Me expulsaron de la Universidad a una edad a la que a la mayoría todavía no los dejan entrar. He recorrido de noche caminos de los que otros no se atreven a hablar ni siquiera de día. He hablado con dioses, he amado a mujeres y he escrito canciones que hacen llorar a los bardos. »Me llamo Kvothe. Quizá hayas oído hablar de mí.»</h3>
+		</div>
+		<div id="multimedia">
+			<div class="audio">
+				<p>Escucha el primer capítulo</p>
+				<audio controls>
+					<source src="AudioLibro/PrimerCapitulo.mp3" type="audio/mpeg"/>
+					No disponible
+				</audio>
+			</div>
+			
+			<div class="pdf">
+			  	<p>Lee el primer capítulo</p>
+			  	<div><a href="PDF/El nombre del viento cap1 impresion.pdf">papel</a></div>
+				<div><a href="PDF/El nombre del viento cap1 pantalla.pdf">pantalla</a></div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<footer>
+	  <div><img src="Img/logo.png" alt="logo"/><span class="der">Derechos bla bla</span>
+	  <img src="Img/twitter.png" alt="Twitter"/>
+	  <img id="fb" src="Img/facebook.png" alt="Facebook"/>
+	  <span class="follow">Siguenos en: </span></div>
+	  <div id="localStorageInside"></div>
+	  <div class="g-signin2" data-onsuccess="onSignIn"></div>
+    </footer>
+</body>
+</html>

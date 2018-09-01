@@ -1,0 +1,430 @@
+@charset "utf-8";
+@font-face {
+
+font-family: "Oxygen";
+
+src: url(Fuente/Oxygen.ttf) format("opentype") ;
+
+}
+/* CSS Document */
+#localStorageInside{
+	width:100%;
+	float:left;
+	border-top:1px solid #fff;
+	background-color:#d8d8d8;
+	margin-top:5px;
+}
+
+.lsind{
+	float:left;
+	width:33.3%;
+	font-size:70%;
+}
+body{
+	font-family:"Oxygen", Arial, sans-serif;
+	font-size:2rem;
+	background-color:#f2f2f2;	
+	margin:0px;
+	color:#1C140D;
+}
+/* -------------------------------------Estilo de la cabecera--------------------------------- */
+#Cabecera{
+	border-bottom:1.5px solid #d7d7d7;
+	background-color:#fff;
+	overflow: hidden;
+	text-align: center;
+}
+
+#logo{
+	margin-left:8%;
+}
+#logo img{
+	float:left;
+	height: 2.4em;
+}
+#logo a span{
+	font-size: 160%;
+	float:left;
+	padding-top:3px;
+	font-weight: bold;
+}
+
+#Inici,#Biblio,#Cuenta{
+	display:inline-table;
+	margin:0px;
+	padding:0px;
+	font-size:120%;
+	overflow: hidden;
+	font-weight: bold;
+	color:#1C140D;
+	margin-top:8px;
+}
+#Biblio{
+	padding-left:47px;
+}
+#Inici a,#Biblio a{
+	float:inherit;
+}
+#Cuenta a{
+	float:inherit;
+}
+#Cuenta .aba,#Inici .aba,#Biblio .aba{
+	background-color:#34A143;
+	margin-top:0em;
+	color:#fff;
+	width: 100%;
+	height: 0.2em;
+}
+
+#Biblio{
+	border-left: 0.15em solid #d7d7d7;
+}
+
+#Cuenta{
+	margin-right:10%;
+	margin-lefT:0px;
+	border:none;
+	padding-left:0px;
+	float:right;
+}
+
+#Inici{
+	margin-left:-52px;
+	margin-right:40px;
+}
+
+
+#Biblio span:hover,#Inici span:hover, #Cuenta span:hover{
+	background-color:#34A143;
+	color:#fff;
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
+	transition: background-color 0.4s;
+}
+
+
+a:link{
+	text-decoration: none;
+}
+a{
+	color:#1C140D;
+}
+/* ----------------------------fin Estilo de la cabecera------------------------ */
+
+/* --------------------------------Cuerpo Principal----------------------------- */
+
+#CuerpoPrincipal{
+	overflow: hidden;
+	margin-left:8%;
+	margin-right:8%;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	padding: 0.5em;
+	background-color:#F8F8F8;
+	border: 1.5px solid #d7d7d7;
+}
+#PresentaciónAutor{
+	overflow: hidden;
+}
+
+#PresentaciónAutor img{
+	width:30%;
+	float:right;
+	margin: 2.5%;
+	margin-top: 2em;
+	border:2px solid #34a143
+}
+
+#PresentaciónAutor h1{
+	margin-top:0px;
+	margin-bottom: 5px;
+	padding-left:2.5%;
+	width: 79%;
+	color:#34A143;
+	font-size: 150%;
+	position:absolute;
+}
+
+#PresentaciónAutor h3{
+	
+	margin-top:80px;
+	margin-left:20px;
+	width:100%;
+	font-size:70%;
+	font-weight:100;
+}
+
+#multimedia{
+	overflow: hidden;
+	width: 100%;
+	border-top: 2px solid #d7d7d7;
+	padding-top:0.5em;
+	margin-top:0.5em;
+	margin-bottom: 0.5em;
+}
+.a{
+	float:left;
+	overflow: hidden;
+	width: 48%;
+}
+.a:first-child{
+	margin-right:4%;
+}
+
+.tituloSección{
+	text-align: center;
+	font-weight: bold;
+	font-size: 90%;
+	padding: 0.3em;
+	color:#34A143;
+	background-color:#ffffff;
+	border: 1.5px solid #d7d7d7;
+	border-radius: 20px 20px 0px 0px;
+}
+
+
+
+.contenidoSección{
+	overflow:hidden;
+	background-color:#fcfcfc;
+	margin-left: 3px;
+	margin-right: 3px;
+	border: 1.5px solid #d7d7d7;
+	border-radius: 0px 0px 20px 20px;
+	padding: 20px;
+	padding-top:0px;
+	text-align: center;
+}
+
+
+
+
+.bestsellcont{
+	float:left;
+	overflow: hidden;
+	width:33%;
+	margin-top: 20px;
+	text-align: center;
+}
+.bestsellcont img{
+	float:left;
+	height: 7em;
+	width: 5em;
+	display: inline-table;
+}
+
+.bestsellcont h1{
+	font-size:60%;
+	text-align: center;
+	color:#34A143;
+	margin-top:0px;
+	display:table-cell;
+	vertical-align: middle;
+}
+
+.bestsellcont div div{
+	display:table;
+	float:left;
+	height: 2em;
+	border:1.5px solid #d7d7d7;
+	border-top:0px;
+	width: 4.95em;
+	background-color:#ffffff;
+}
+
+.bestsellcont div{
+	width: 5em;
+	display:inline-table;
+}
+
+.titEntrevista{
+	width:90%;
+	text-transform: uppercase;
+	color:#34A143;
+	font-weight: bold;
+	font-size:75%;
+	border:1px solid #34A143;
+	border-radius:25px;
+	margin-left:auto;
+	margin-right: auto;
+}
+
+.contEntrevista{
+	width:90%;
+	margin-left:auto;
+	margin-right:auto;
+	padding:0px;
+	overflow: hidden;
+	border-top:0px;
+	display:block;
+	height:0px;
+	-webkit-transition:  height 2s; /* Safari */
+    transition:  height 2s;
+}
+
+.contEntrevista video{
+	float:left;
+	width: 100%;
+}
+
+.video{
+	margin-top:20px;
+	overflow: hidden;
+}
+
+.video:first-child{
+	maring:0px;
+}
+
+
+.video:focus .contEntrevista{
+	height:480px;
+}
+
+.video:focus .titEntrevista{
+	border-radius:25px 25px 0px 0px;
+}
+
+
+/* Pie de pagina y animaciones basicas */
+
+
+footer{
+	background-color:#a8a8a8;
+	color:#34A143;
+	overflow: hidden;
+	display:table;
+	width: 100%;
+	font-size:90%;
+	border-top: 1.5px solid #d7d7d7;
+}
+footer img{
+	height:70px;
+}
+footer img:nth-last-child(3), footer img:nth-last-child(2){
+	float:right;
+	margin-left:3%;
+}
+footer img:nth-last-child(3){
+	margin-right:8%;
+}
+.follow{
+	font-weight: bold;
+	margin-top:15px;
+	display:table-cell;
+	vertical-align: middle;
+	float:right;
+}
+footer img:first-child{
+	float:left;
+	margin-left:8%;
+}
+.der{
+	font-weight: bold;
+	margin-top:15px;
+	display:table-cell;
+	vertical-align: middle;
+	float:left;
+	margin-left:3%;
+}
+
+#fb{
+	height: 65px;
+	padding-top:2px;
+}
+
+#Inici span:hover,#Cuenta span:hover,#Biblio span:hover{
+	background-color:#34A143;
+	color:#fff;
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
+}
+
+#login{
+	overflow:hidden;
+	margin-top:5px;
+	z-index:1;
+}
+
+#imgLogin{
+	height:50px;
+	width:40px;
+	border-radius:25px 25px 25px 25px;
+	border: 1.5px solid #34a143;
+	float:left;
+}
+
+
+#nombreLoginp{
+	float:left;
+	display: table;
+	height:50px;
+}
+
+#nombreLogin{
+	display: table-cell;
+	vertical-align: middle;
+	color:#34a143;
+	font-size:50%;
+
+}
+
+#imgLogin img{
+	height:100%;
+	width:100%;
+
+	border-radius:25px 25px 25px 25px;
+}
+
+#login ul{
+	display:none;
+}
+
+#login:focus ul, #login:active ul {
+	display: block;
+	position: absolute;
+	width: 816px;
+	border:	solid 1px #34a143;
+	border-top: none;
+	background-color: #fff;
+}
+
+.dropdownGoogle{
+	position:relative;
+	display:inline-block;
+	cursor:pointer;
+}
+
+.dropdown-contentGoogle{
+	top:65px;
+	display:none;
+	position:fixed;
+	background-color: #ffffff;
+	min-width:160px;
+	border:1.5px solid #d7d7d7;
+	border-top: 0px;
+	z-index:0;
+	padding:0px;
+	text-align:left;
+	font-size:1rem;
+}
+
+.dropdown-contentGoogle a {
+	color:#34a143;
+    padding: 12px 16px;
+	padding-top:5px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-contentGoogle a:hover {
+	background-color: #fafafa;
+}
+
+.dropdownGoogle:hover .dropdown-contentGoogle {
+    display: block;
+}
+
+.g-signin2{
+	display:none;
+}

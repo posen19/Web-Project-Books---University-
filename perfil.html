@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="google-signin-client_id" content="121742736890-j9cr2r7ov2slm7rqq6pnj24b05phk8c4.apps.googleusercontent.com">
+	<title>CuántoLeo</title>
+	<!--http://code.jquery.com/ui/    datepicker-->
+ 	<link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.11.4/themes/flick/jquery-ui.css">
+ 	<link href="css/CSS-Cuenta.css" rel="stylesheet" type="text/css">
+
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="https://apis.google.com/js/platform.js" async defer></script>	
+	<script src="GoogleLogin.js"></script>
+	<script src="controllerperfil.js"></script>
+</head>
+
+<body>
+	<header id="Cabecera">
+		<div id="logo">
+			<a href="index.html"><img src="Img/logo.png" alt="Logo de la página"/><span>CuántoLeo</span></a>
+		</div>
+		<div id="Inici">
+			<a href="index.html"><span>INICIO</span>
+			<div class="aba">INICIO</div></a>
+		</div>
+		
+		<div id="Biblio">
+			<a href="Biblioteca.html"><span>BIBLIOTECA</span>
+			<div class="aba">BIBLIOTECA</div></a>
+		</div>
+		<div id="Cuenta">
+			<span>CUENTA</span>
+			<div class="aba">CUENTA</div>
+		</div>
+	</header>
+	
+	<div id="CuerpoPrincipal">
+		<div class="datosperfil">
+			<div id="imagenperfil">
+				<div id="abimg">
+					<img src="Img/Noticia1.jpg"/>
+				</div>
+				<form enctype="multipart/form-data" action="php/uploader.php" method="POST">
+					<input name="uploadedfile" type="file"/>
+					<input type="submit" value="Cambiar imagen"/>
+				</form>
+			</div>
+		
+			<div class="campo2">
+				<label id="lnom2" for="nom2">Nombre</label>
+				<input id="nom2" type="text" name="nom2" maxlength="12" autocomplete="on" required/>
+			</div>
+			<!-- input apellido -->
+			<div class="campo2">
+			  <label id="lcnom2" for="cnom2">Apellido</label>
+			  <input id="cnom2" type="text" name="cnom2" maxlength="12" autocomplete="off" required/>
+			</div>
+			<!-- input mail -->
+			<div class="campo2">
+				<label for="mail2">Correo electrónico</label>
+				<input id="mail2" type="text"  name="mail2" required disabled/>
+			</div>
+			<!-- input telefóno -->
+			<div class="campo2">
+				<label for="tel2">Teléfono</label>
+				<input id="tel2" type="text"  name="tel2" value="+376-" required>
+			</div>
+			<!-- input fecha nacimiento -->
+			<div class="campo2">
+				<label for="datepicker">Fecha de nacimiento</label>
+				<input type="text" id="datepicker" class="datepicker2" name="datepicker2" readonly required>
+			</div>
+			<!-- input dirección -->
+			<div class="campo2">
+				<label for="direccion2">Dirección</label>
+				<input id="direccion2" type="text" name="direccion2" maxlength="25" required>
+			</div>
+			<!-- input pobacion -->
+			<div class="campo2">
+				<label for="poblacion2">Población</label>
+				<input id="poblacion2" type="text" name="poblacion2" maxlength="25" required>
+			</div>
+			<!-- input pais -->
+			<div class="campo2">
+				<label for="pais2">País</label>
+				<input id="pais2" type="text" name="pais2" maxlength="25" required>
+			</div>
+			<!-- input cp -->
+			<div class="campo2">
+				<label for="codipostal2">Codigo postal</label>
+				<input id="codipostal2" type="text" name="codipostal2" maxlength="5" required>
+			</div>
+			<!-- input iban -->
+			<div class="campo2">
+				<label for="iban2">Datos bancarios</label>
+				<input id="iban2" type="text" name="iban2" maxlength="24" required>
+			</div>
+			<button id="actualizar" class="boton">Actualizar perfil!</button>
+			<a href="admin.html"><button id="admin" class="boton">Zona Admin</button></a>
+		</div>
+		<div id="librosVotados">
+			<h1 id="titit">Libros Votados</h1>
+			<div id="libros">
+				
+			</div>
+		</div>
+	</div>
+
+	
+	<footer>
+	  <div><img src="Img/logo.png" alt="logo"/><span class="der">Derechos bla bla</span>
+	  <img src="Img/twitter.png" alt="Twitter"/>
+	  <img id="fb" src="Img/facebook.png" alt="Facebook"/>
+	  <span class="follow">Siguenos en: </span></div>
+	  <div id="localStorageInside"></div>
+	  <div id="aa" class="g-signin2" data-onsuccess="onSignIn"></div>
+    </footer>
+</body>
+</html>

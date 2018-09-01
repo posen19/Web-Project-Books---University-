@@ -1,0 +1,233 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="google-signin-client_id" content="121742736890-j9cr2r7ov2slm7rqq6pnj24b05phk8c4.apps.googleusercontent.com">
+	<title>CuántoLeo</title>
+	<!--http://code.jquery.com/ui/    datepicker-->
+ 	<link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.11.4/themes/flick/jquery-ui.css">
+ 	<link href="css/CSS-Cuenta.css" rel="stylesheet" type="text/css">
+
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="controllercuenta.js" type="text/javascript"></script>
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+	<script src="js/signup.js" type="text/javascript"></script>
+	<script src="GoogleLogin.js"></script>
+</head>
+
+<body>
+	<header id="Cabecera">
+		<div id="logo">
+			<a href="index.html"><img src="Img/logo.png" alt="Logo de la página"/><span>CuántoLeo</span></a>
+		</div>
+		<div id="Inici">
+			<a href="index.html"><span>INICIO</span>
+			<div class="aba">INICIO</div></a>
+		</div>
+		
+		<div id="Biblio">
+			<a href="Biblioteca.html"><span>BIBLIOTECA</span>
+			<div class="aba">BIBLIOTECA</div></a>
+		</div>
+		<div id="Cuenta">
+			<span>CUENTA</span>
+			<div class="aba">CUENTA</div>
+		</div>
+	</header>
+	
+	<div id="CuerpoPrincipal">
+		<div class="contenidoSección">
+			<!-- Zona Registro -->
+			<div id="Registro">
+				<div class="a">
+					<!--<form id="formregistro" method="POST" action="#">--><!--action="alta.php"-->
+						<!-- input nombre -->
+						<div class="campo">
+						  <label id="lnom" for="nom"> Nombre</label>
+						  <input id="nom" type="text" name="nom" maxlength="12" autocomplete="on" required/>
+						  <div class="warning" id="user">
+						  	<div class="triangulo"></div>
+						  	<p id="pNom">
+						  		<p id="nom1"></p>
+							  	<p id="nom2"></p>
+						  	</p>
+						  </div>
+						</div>
+						<!-- input apellido -->
+						<div class="campo">
+						  <label id="lcnom" for="cnom2"> Apellido</label>
+						  <input id="cnom" type="text" name="cnom" maxlength="12" autocomplete="off" required>
+						  <div class="warning" id="cuser">
+						  	<div class="triangulo"></div>
+						  	<p id="pCognom">
+						  		<p id="cnom1"></p>
+							  	<p id="cnom2"></p>
+						  	</p>
+						  </div>
+						</div>
+						<!-- input mail -->
+						<div class="campo">
+							<label for="mail">
+								Correo electrónico 
+							</label>
+							<input id="mail" type="text"  name="mail" required>
+							<div class="warning" id="ccorreo">
+						  		<div class="triangulo"></div>
+						  		<p id="cmail"></p>
+						  	</div>
+						</div>
+						<!-- input telefóno -->
+					  	<div class="campo">
+							<label for="tel">
+								Teléfono
+							</label>
+							<input id="tel" type="text"  name="tel" value="+376-" required>
+							<div class="warning" id="tele">
+						  		<div class="triangulo"></div>
+						  		<p id="fono"></p>
+						  	</div>
+						</div>
+						<!-- input contraseña -->
+				  	  	<div class="campo">
+							<label for="password">
+								Contraseña
+							</label>
+							<input id="password" type="password" name="password" required/>
+							<div class="warning" id="pass">
+						  		<div class="triangulo"></div>
+						  		<p id="pas"></p>
+						  		<p id="pas2"></p>
+						  		<p id="pas3"></p>
+						  		<p id="pas4"></p>
+						  	</div>
+						</div>
+						<!-- input repetir contra-->
+						<div class="campo">
+							<label for="passwordrep">
+								Repite Contraseña
+							</label>
+							<input id="passwordrep" type="password" name="Usuario"  required>
+							<div class="warning" id="passrep">
+								<div class="triangulo"></div>
+								<p id="pasrep"></p>
+							</div>
+						</div>
+						<!-- input fecha nacimiento -->
+						<div class="campo">
+							<label for="datepicker">
+								Fecha de nacimiento 
+							</label>
+							<input type="text" id="datepicker" name="datepicker" readonly required>
+						</div>
+						<!-- input dirección -->
+						<div class="campo">
+							<label for="direccion">
+								Dirección 
+							</label>
+							<input id="direccion" type="text" name="direccion" maxlength="25" required>
+							<div class="warning" id="dire">
+								<div class="triangulo"></div>
+								<p id="dir"></p>
+							</div>
+						</div>
+						<!-- input pobacion -->
+						<div class="campo">
+							<label for="poblacion">
+								Población 
+							</label>
+							<input id="poblacion" type="text" name="poblacion" maxlength="25" required>
+							<div class="warning" id="pobla">
+								<div class="triangulo"></div>
+								<p id="pob"></p>
+							</div>
+						</div>
+						<!-- input pais -->
+						<div class="campo">
+							<label for="pais">
+								País 
+							</label>
+							<input id="pais" type="text" name="pais" maxlength="25" required>
+							<div class="warning" id="pai">
+								<div class="triangulo"></div>
+								<p id="pa"></p>
+							</div>
+						</div>
+						<!-- input cp -->
+						<div class="campo">
+							<label for="codipostal">
+								Codigo postal
+							</label>
+							<input id="codipostal" type="text" name="codipostal" maxlength="5" required>
+							<div class="warning" id="copo">
+								<div class="triangulo"></div>
+								<p id="cp"></p>
+							</div>
+						</div>
+			  	  		<!-- textarea preferencias espectaculo -->
+				  	  	<div class="campo">
+							<label>
+								Temas preferidos 
+							</label>
+							<div id="sup">
+							<div class="seleccion">
+				  			<div><input type="checkbox" class="selinput" id="cb1" value="scifi"></div>
+					  		<div><input type="checkbox" class="selinput" id="cb2" value="fantasia"></div>
+					  		<div><input type="checkbox" class="selinput" id="cb3" value="accion"></div>
+								<div><input type="checkbox" class="selinput" id="cb4" value="autohelp"></div></div>
+					  		<div class="seltext">ciencia ficción<br/>
+						  	fantasia<br/>
+							acción<br/>
+							auto ayuda</div>
+							</div>
+						</div>
+						<!-- input iban -->
+						<div class="campo">
+							<label for="iban">
+								Datos bancarios
+							</label>
+							<input id="iban" type="text" name="iban" maxlength="24" required>
+							<div class="warning" id="iba">
+								<div class="triangulo"></div>
+								<p id="ib"></p>
+								<p id="ib2"></p>
+							</div>
+						</div>
+					<input type="reset" id="clearbutton" class="boton" value="Reset!"/>
+					<button id="registroboton" class="boton" disabled>Registrate!</button>
+					<button class="boton" id="botoncookie">veure cookies</button>
+					<!--</form>-->	
+				</div>
+			</div>
+			<div id="Login">
+				<div class="a">
+					<div class="campo">
+						<label for="loginuserormail">
+							Email
+						</label>
+						<input id="loginuserormail" type="text" name="Usuario">
+					</div>
+					<div class="campo">
+						<label for="loginpass">
+							Contraseña
+						</label>
+						<input id="loginpass" type="password" name="Usuario">
+					</div>
+					<input id="loginboton" class="boton2" type="button" value="Login!" />
+					<div class="g-signin2" data-onsuccess="onSignIn"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	<footer>
+	  <div><img src="Img/logo.png" alt="logo"/><span class="der">Derechos bla bla</span>
+	  <img src="Img/twitter.png" alt="Twitter"/>
+	  <img id="fb" src="Img/facebook.png" alt="Facebook"/>
+	  <span class="follow">Siguenos en: </span></div>
+	  <div id="localStorageInside"></div>
+	  
+    </footer>
+</body>
+</html>

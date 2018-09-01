@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<definitions xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="urn:llibreAutor" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns="http://schemas.xmlsoap.org/wsdl/" targetNamespace="urn:llibreAutor">
+<types>
+<xsd:schema targetNamespace="urn:llibreAutor"
+>
+ <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+ <xsd:import namespace="http://schemas.xmlsoap.org/wsdl/" />
+</xsd:schema>
+</types>
+<message name="getLibroRequest">
+  <part name="autor" type="xsd:string" /></message>
+<message name="getLibroResponse">
+  <part name="return" type="xsd:string" /></message>
+<portType name="llibreAutorPortType">
+  <operation name="getLibro">
+    <documentation>Retorna el llistat de tots el libres escrits per el autor que li pases.</documentation>
+    <input message="tns:getLibroRequest"/>
+    <output message="tns:getLibroResponse"/>
+  </operation>
+</portType>
+<binding name="llibreAutorBinding" type="tns:llibreAutorPortType">
+  <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+  <operation name="getLibro">
+    <soap:operation soapAction="urn:llibreAutor#getLibro" style="rpc"/>
+    <input><soap:body use="encoded" namespace="urn:llibreAutor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/></input>
+    <output><soap:body use="encoded" namespace="urn:llibreAutor" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/></output>
+  </operation>
+</binding>
+<service name="llibreAutor">
+  <port name="llibreAutorPort" binding="tns:llibreAutorBinding">
+    <soap:address location="http://exemples.ua.ad/Paulo/php/Servei_llibres.php"/>
+  </port>
+</service>
+</definitions>

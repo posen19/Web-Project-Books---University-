@@ -1,0 +1,20 @@
+<libros>
+	<libro>
+		<titulo>ABC</titulo>
+		<autor>Patrick Rothfuss</autor>
+		<descripcion>En una posada en tierra de nadie, un hombre se dispone a relatar su historia.</descripcion>
+		<img>Img/PortadaElNombreDelViento.jpg</img>
+	</libro>
+	<libro>
+		<titulo>Ubik</titulo>
+		<autor>Phillip K. Dick</autor>
+		<descripcion>Distopia surrealista donde una droga hace de las suyas.</descripcion>
+		<img>Img/PortadaUbik.jpg</img>
+	</libro>
+	<libro>
+		<titulo>El imperio final</titulo>
+		<autor>Brandon Sanderson</autor>
+		<descripcion>Existen personas con poderes alomanticos, metabolizan metales para albergar poderes y el más poderoso es un dictador inmortal.</descripcion>
+		<img>Img/PortadaElImperioFinal.jpg</img>
+	</libro>
+</libros>

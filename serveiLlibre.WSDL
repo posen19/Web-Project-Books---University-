@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<definitions xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="urn:llibres" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns="http://schemas.xmlsoap.org/wsdl/" targetNamespace="urn:llibres">
+<types>
+<xsd:schema targetNamespace="urn:llibres"
+>
+ <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+ <xsd:import namespace="http://schemas.xmlsoap.org/wsdl/" />
+</xsd:schema>
+</types>
+<message name="getProdRequest">
+  <part name="categoria" type="xsd:string" /></message>
+<message name="getProdResponse">
+  <part name="return" type="xsd:string" /></message>
+<portType name="llibresPortType">
+  <operation name="getProd">
+    <documentation>Retorna un llistat de productes d'aquesta categoria</documentation>
+    <input message="tns:getProdRequest"/>
+    <output message="tns:getProdResponse"/>
+  </operation>
+</portType>
+<binding name="llibresBinding" type="tns:llibresPortType">
+  <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+  <operation name="getProd">
+    <soap:operation soapAction="urn:llibres#getProd" style="rpc"/>
+    <input><soap:body use="encoded" namespace="urn:llibres" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/></input>
+    <output><soap:body use="encoded" namespace="urn:llibres" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/></output>
+  </operation>
+</binding>
+<service name="llibres">
+  <port name="llibresPort" binding="tns:llibresBinding">
+    <soap:address location="http://exemples.ua.ad/Miki/WebServicePHP/exempleBase/llibres_WSDL.php"/>
+  </port>
+</service>
+</definitions>
